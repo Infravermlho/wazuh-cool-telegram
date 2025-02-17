@@ -1,0 +1,110 @@
+{
+  "input": {
+    "type": "log"
+  },
+  "agent": {
+    "name": "brsp01srv010",
+    "id": "000"
+  },
+  "manager": {
+    "name": "brsp01srv010"
+  },
+  "data": {
+    "integration": "office365",
+    "office365": {
+      "AzureActiveDirectoryEventType": "1",
+      "UserKey": "02c983c0-491e-4b2f-8212-8d81c9a2b0f0",
+      "ActorIpAddress": "174.85.69.35",
+      "Operation": "UserLoginFailed",
+      "OrganizationId": "cc1d12a1-5603-401f-a5fb-60bfbd2eaca7",
+      "ExtendedProperties": [
+        {
+          "Value": "UserError",
+          "Name": "ResultStatusDetail"
+        },
+        {
+          "Value": "BAV2ROPC",
+          "Name": "UserAgent"
+        },
+        {
+          "Value": "16",
+          "Name": "UserAuthenticationMethod"
+        },
+        {
+          "Value": "OAuth2:Token",
+          "Name": "RequestType"
+        }
+      ],
+      "IntraSystemId": "eb6b0b9a-c3ea-4733-aecb-2c88fad16d00",
+      "Target": [
+        {
+          "Type": 0,
+          "ID": "00000002-0000-0ff1-ce00-000000000000"
+        }
+      ],
+      "RecordType": "15",
+      "Version": "1",
+      "ModifiedProperties": [],
+      "Actor": [
+        {
+          "Type": 0,
+          "ID": "02c983c0-491e-4b2f-8212-8d81c9a2b0f0"
+        },
+        {
+          "Type": 5,
+          "ID": "cmamone@onelinea.com.br"
+        }
+      ],
+      "LogonError": "IdsLocked",
+      "DeviceProperties": [
+        {
+          "Value": "Other",
+          "Name": "BrowserType"
+        },
+        {
+          "Value": "False",
+          "Name": "IsCompliantAndManaged"
+        }
+      ],
+      "Subscription": "Audit.AzureActiveDirectory",
+      "ActorContextId": "cc1d12a1-5603-401f-a5fb-60bfbd2eaca7",
+      "ResultStatus": "Failed",
+      "ObjectId": "00000002-0000-0ff1-ce00-000000000000",
+      "ErrorNumber": "50053",
+      "ClientIP": "174.85.69.35",
+      "Workload": "AzureActiveDirectory",
+      "UserId": "cmamone@onelinea.com.br",
+      "TargetContextId": "cc1d12a1-5603-401f-a5fb-60bfbd2eaca7",
+      "CreationTime": "2023-09-28T20:39:05",
+      "Id": "eb6b0b9a-c3ea-4733-aecb-2c88fad16d00",
+      "InterSystemsId": "a1c91541-a501-4c38-8bb1-bc947a8ebaba",
+      "ApplicationId": "00000002-0000-0ff1-ce00-000000000000",
+      "UserType": "0"
+    }
+  },
+  "rule": {
+    "firedtimes": 128,
+    "mail": false,
+    "level": 3,
+    "hipaa": ["164.312.a.2.I", "164.312.b", "164.312.d", "164.312.e.2.II"],
+    "pci_dss": ["8.3", "10.6.1"],
+    "description": "Chamado aberto de teste, favor ignorar.",
+    "groups": ["office365", "AzureActiveDirectoryStsLogon"],
+    "id": "91545"
+  },
+  "location": "office365",
+  "decoder": {
+    "name": "json"
+  },
+  "id": "1695933798.1022963340",
+  "GeoLocation": {
+    "city_name": "Morgan Hill",
+    "country_name": "United States",
+    "region_name": "California",
+    "location": {
+      "lon": -121.6502,
+      "lat": 37.1357
+    }
+  },
+  "timestamp": "2023-09-28T20:43:18.135+0000"
+}

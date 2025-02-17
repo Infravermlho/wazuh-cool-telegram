@@ -1,0 +1,86 @@
+{
+  "agent": {
+    "ip": "10.32.7.200",
+    "name": "BRSP01SRV0006",
+    "id": "003",
+    "labels": {
+      "sourcetype": "windows"
+    }
+  },
+  "manager": {
+    "name": "brsp01srv0010"
+  },
+  "data": {
+    "win": {
+      "eventdata": {
+        "subjectLogonId": "0xac99a3ac",
+        "targetUserName": "Administradores",
+        "memberSid": "S-1-5-21-2170206525-1112509406-1036232476-9205",
+        "subjectUserSid": "S-1-5-21-2170206525-1112509406-1036232476-8633",
+        "subjectDomainName": "ONELINEA",
+        "memberName": "cn=Nickson Martins (Domain Admin),OU=Domain_Admins,OU=TI,OU=Usuarios,DC=onelinea,DC=com,DC=br",
+        "targetDomainName": "Builtin",
+        "targetSid": "S-1-5-32-544",
+        "subjectUserName": "nmartins"
+      },
+      "system": {
+        "eventID": "4732",
+        "keywords": "0x8020000000000000",
+        "providerGuid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+        "level": "0",
+        "channel": "Security",
+        "opcode": "0",
+        "message": "\"A member was added to a security-enabled local group.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-21-2170206525-1112509406-1036232476-8633\r\n\tAccount Name:\t\tnmartins\r\n\tAccount Domain:\t\tONELINEA\r\n\tLogon ID:\t\t0xAC99A3AC\r\n\r\nMember:\r\n\tSecurity ID:\t\tS-1-5-21-2170206525-1112509406-1036232476-9205\r\n\tAccount Name:\t\tcn=Nickson Martins (Domain Admin),OU=Domain_Admins,OU=TI,OU=Usuarios,DC=onelinea,DC=com,DC=br\r\n\r\nGroup:\r\n\tSecurity ID:\t\tS-1-5-32-544\r\n\tGroup Name:\t\tAdministradores\r\n\tGroup Domain:\t\tBuiltin\r\n\r\nAdditional Information:\r\n\tPrivileges:\t\t-\"",
+        "version": "0",
+        "systemTime": "2024-01-05T18:24:16.9211881Z",
+        "eventRecordID": "31183563",
+        "threadID": "78024",
+        "computer": "BRSP01SRV0006.onelinea.com.br",
+        "task": "13826",
+        "processID": "800",
+        "severityValue": "AUDIT_SUCCESS",
+        "providerName": "Microsoft-Windows-Security-Auditing"
+      }
+    }
+  },
+  "rule": {
+    "firedtimes": 1,
+    "mail": true,
+    "level": 14,
+    "description": "(CHAMADO DE TESTE) AD_008_Privileged Group Change Without Permission",
+    "groups": [
+      "security_event",
+      " windows",
+      "group_changed",
+      "producao",
+      "producao_ad"
+    ],
+    "mitre": {
+      "technique": [
+        "Account Manipulation",
+        "Valid Accounts",
+        "Domain Accounts"
+      ],
+      "id": ["T1098", "T1078", "T1078.002"],
+      "tactic": [
+        "Persistence",
+        "Defense Evasion",
+        "Privilege Escalation",
+        "Initial Access"
+      ]
+    },
+    "id": "101007"
+  },
+  "decoder": {
+    "name": "windows_eventchannel"
+  },
+  "full_log": "{\"win\":{\"system\":{\"providerName\":\"Microsoft-Windows-Security-Auditing\",\"providerGuid\":\"{54849625-5478-4994-a5ba-3e3b0328c30d}\",\"eventID\":\"4732\",\"version\":\"0\",\"level\":\"0\",\"task\":\"13826\",\"opcode\":\"0\",\"keywords\":\"0x8020000000000000\",\"systemTime\":\"2024-01-05T18:24:16.9211881Z\",\"eventRecordID\":\"31183563\",\"processID\":\"800\",\"threadID\":\"78024\",\"channel\":\"Security\",\"computer\":\"BRSP01SRV0006.onelinea.com.br\",\"severityValue\":\"AUDIT_SUCCESS\",\"message\":\"\\\"A member was added to a security-enabled local group.\\r\\n\\r\\nSubject:\\r\\n\\tSecurity ID:\\t\\tS-1-5-21-2170206525-1112509406-1036232476-8633\\r\\n\\tAccount Name:\\t\\tnmartins\\r\\n\\tAccount Domain:\\t\\tONELINEA\\r\\n\\tLogon ID:\\t\\t0xAC99A3AC\\r\\n\\r\\nMember:\\r\\n\\tSecurity ID:\\t\\tS-1-5-21-2170206525-1112509406-1036232476-9205\\r\\n\\tAccount Name:\\t\\tcn=Nickson Martins (Domain Admin),OU=Domain_Admins,OU=TI,OU=Usuarios,DC=onelinea,DC=com,DC=br\\r\\n\\r\\nGroup:\\r\\n\\tSecurity ID:\\t\\tS-1-5-32-544\\r\\n\\tGroup Name:\\t\\tAdministradores\\r\\n\\tGroup Domain:\\t\\tBuiltin\\r\\n\\r\\nAdditional Information:\\r\\n\\tPrivileges:\\t\\t-\\\"\"},\"eventdata\":{\"memberName\":\"cn=Nickson Martins (Domain Admin),OU=Domain_Admins,OU=TI,OU=Usuarios,DC=onelinea,DC=com,DC=br\",\"memberSid\":\"S-1-5-21-2170206525-1112509406-1036232476-9205\",\"targetUserName\":\"Administradores\",\"targetDomainName\":\"Builtin\",\"targetSid\":\"S-1-5-32-544\",\"subjectUserSid\":\"S-1-5-21-2170206525-1112509406-1036232476-8633\",\"subjectUserName\":\"nmartins\",\"subjectDomainName\":\"ONELINEA\",\"subjectLogonId\":\"0xac99a3ac\"}}}",
+  "input": {
+    "type": "log"
+  },
+  "@timestamp": "2024-01-05T18:24:17.805Z",
+  "location": "EventChannel",
+  "id": "1704479057.9268798134",
+  "timestamp": "2024-01-05T18:24:17.805+0000",
+  "_id": "gVHe2owB0WrOWfqzasMI"
+}

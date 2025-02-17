@@ -1,0 +1,9 @@
+instance: "a deer, a female deer"
+chat_id: 00000
+rule_id:
+  default:
+    title: "Placeholder {}"
+    description: "Ok yeah yeah"
+  137881:
+    title: "Placeholder ${aaaa}"
+    description: "Ok yeah yeah"

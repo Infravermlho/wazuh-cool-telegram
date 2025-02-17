@@ -1,0 +1,78 @@
+{
+  "input": {
+    "type": "log"
+  },
+  "agent": {
+    "name": "brsp01srv010",
+    "id": "000"
+  },
+  "manager": {
+    "name": "brsp01srv010"
+  },
+  "data": {
+    "integration": "office365",
+    "office365": {
+      "Site": "f4869bc3-993c-4d3d-95e5-8770389e6bbc",
+      "ListBaseType": "1",
+      "Platform": "WinDesktop",
+      "UserKey": "i:0h.f|membership|1003200261c3461b@live.com",
+      "ItemType": "File",
+      "IsManagedDevice": "false",
+      "DeviceDisplayName": "2a01:111:2054:151:bf1:92ad:8b2f:9a3",
+      "Operation": "FileAccessed",
+      "OrganizationId": "cc1d12a1-5603-401f-a5fb-60bfbd2eaca7",
+      "RecordType": "6",
+      "ListId": "6de28623-c46a-4c14-8083-257d1e17ba5a",
+      "Version": "1",
+      "WebId": "b04254b9-7eb3-41ca-bef9-5f4c9a21cdc7",
+      "UserAgent": "Microsoft Office Excel/16.0.16731.20182 (Windows/10.0; Desktop x64; pt-BR; Desktop app; Dell Inc./Inspiron 15 5510)",
+      "CorrelationId": "53fbdea0-70b3-4000-479b-fcb43911284c",
+      "Subscription": "Audit.SharePoint",
+      "ListItemUniqueId": "56329c4b-8d99-471e-bd22-8ea85a7a5042",
+      "AuthenticationType": "FormsCookieAuth",
+      "SourceFileName": "WHG - Matriz - Segurança - OL002175 - Implantação - Fortimail Cloud.xlsx",
+      "ObjectId": "https://oltecnologiacombr.sharepoint.com/sites/projects/Documentos Partilhados/WHG - Matriz - Segurança - OL002175 - Implantação - Fortimail Cloud.xlsx",
+      "SiteUrl": "https://oltecnologiacombr.sharepoint.com/sites/projects/",
+      "AppAccessContext": {
+        "AADSessionId": "d81f7138-9faf-42a0-b544-20bfa85817df",
+        "TokenIssuedAtTime": "2023-09-27T20:13:57",
+        "UniqueTokenId": "ZlAyClM7K02voa8ase5EAA",
+        "CorrelationId": "53fbdea0-70b3-4000-479b-fcb43911284c"
+      },
+      "ClientIP": "2804:7f0:b541:58ea:90e0:961c:703e:35b6",
+      "ListServerTemplate": "101",
+      "SourceFileExtension": "xlsx",
+      "Workload": "SharePoint",
+      "SourceRelativeUrl": "Documentos Partilhados",
+      "EventSource": "SharePoint",
+      "HighPriorityMediaProcessing": "false",
+      "UserId": "wescobar@onelinea.com.br",
+      "CreationTime": "2023-09-28T20:43:37",
+      "Id": "74777b62-aa8b-4bb4-241a-08dbc0639765",
+      "UserType": "0"
+    }
+  },
+  "rule": {
+    "firedtimes": 253,
+    "mail": false,
+    "level": 3,
+    "hipaa": ["164.312.b", "164.312.c.1"],
+    "pci_dss": ["10.6.2", "11.5"],
+    "description": "Chamado aberto de teste, favor ignorar.",
+    "groups": ["office365", "SharePointFileOperation"],
+    "id": "91537"
+  },
+  "location": "office365",
+  "decoder": {
+    "name": "json"
+  },
+  "id": "1695934016.1026826601",
+  "GeoLocation": {
+    "country_name": "Brazil",
+    "location": {
+      "lon": -55,
+      "lat": -10
+    }
+  },
+  "timestamp": "2023-09-28T20:46:56.943+0000"
+}

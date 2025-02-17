@@ -1,0 +1,10 @@
+instance: "a deer, a female deer"
+path: "/usr/share/wazuh-good-telegram/"
+chat_id: 00000
+rule_ids:
+  default:
+    title: "Testing default"
+    description: ""
+  137881:
+    title: "Testing Rule"
+    description: ""
