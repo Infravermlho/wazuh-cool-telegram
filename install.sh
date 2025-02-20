@@ -10,7 +10,7 @@ cd "${SCRIPT_DIR}" || return
 echo -e "Moving the integration to /var/ossec/integrations/"
 mkdir -p "/var/ossec/integrations/" && cp "${SCRIPT_DIR}/integration/custom-good-telegram.py" "/var/ossec/integrations/custom-good-telegram.py"
 chmod 750 /var/ossec/integrations/custom-good-telegram.py
-chown root:wazuh /var/ossec/integrations/custom-good-telegram.py | echo -e "Wazuh user not found"
+chown root:wazuh "/var/ossec/integrations/custom-good-telegram.py" || echo -e "Wazuh user not found"
 
 if [ -e ${CONFIG_PATH} ]; then
   echo -e "Config files found, overwrite? (y/n)"
@@ -24,5 +24,6 @@ else
   mkdir -p "${CONFIG_PATH}" && cp "${SCRIPT_DIR}/default.config.yaml" "${CONFIG_PATH}/config.yaml"
 fi
 
-cp "${SCRIPT_DIR}/default.config.yaml" "${CONFIG_PATH}/default.config.yaml"
+chmod 750 "${SCRIPT_DIR}/default.config.yaml"
+chown root:wazuh "${SCRIPT_DIR}/default.config.yaml" || echo -e "Wazuh user not found"
 echo -e "custom-good-telegram installed sucessfully"

@@ -69,7 +69,7 @@ class Templater:
         return self.escape.sub(r"\\\1", text)
 
     def escape_brackets(self, text):
-        return _re.sub(rf"([{r'{}()'}])", r"\\\\\\\1", text)
+        return _re.sub(f"([{_re.escape(r'{}()')}])", r"\\\1", text)
 
 
 class Logger:
@@ -96,7 +96,7 @@ def make_alert(alert_json):
 
     logger.log("Parsing alert json")
 
-    alert_id = alert_json["id"]
+    alert_id = str(alert_json["rule"]["id"])
     with open(f"{CONFIG_PATH}/config.yaml") as file_io:
         config = yaml.safe_load(file_io)
 

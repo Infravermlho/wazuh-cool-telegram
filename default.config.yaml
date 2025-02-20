@@ -1,9 +1,19 @@
-instance: "a deer, a female deer"
-chat_id: 00000
-rule_id:
+parse_mode: "MarkdownV2" # Supports Markdown or MarkdownV2
+rule_id: # Rule ids must be strings!
   default:
-    title: "Placeholder {}"
-    description: "Ok yeah yeah"
-  137881:
-    title: "Placeholder ${aaaa}"
-    description: "Ok yeah yeah"
+    message: |
+      *${rule.description}*
+      _${full_log}_
+      *Groups:* ${rule.groups}
+      *Rule:* ${rule.id} (Level ${rule.level})
+      *Agent:* ${agent.name} (${agent.id})
+
+  "91537":
+    message: |
+      *${rule.description}*
+      >Operação: ${data.office365.Operation}
+      >${data.office365.SourceFileName}
+      *Groups:* ${rule.groups}
+      *Rule:* ${rule.id} (Level ${rule.level})
+      *Agent:* ${agent.name} (${agent.id})
+      *Local:* ${GeoLocation.country_name}

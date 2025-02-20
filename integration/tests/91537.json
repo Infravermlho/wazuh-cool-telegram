@@ -30,9 +30,9 @@
       "Subscription": "Audit.SharePoint",
       "ListItemUniqueId": "56329c4b-8d99-471e-bd22-8ea85a7a5042",
       "AuthenticationType": "FormsCookieAuth",
-      "SourceFileName": "WHG - Matriz - Segurança - OL002175 - Implantação - Fortimail Cloud.xlsx",
-      "ObjectId": "https://oltecnologiacombr.sharepoint.com/sites/projects/Documentos Partilhados/WHG - Matriz - Segurança - OL002175 - Implantação - Fortimail Cloud.xlsx",
-      "SiteUrl": "https://oltecnologiacombr.sharepoint.com/sites/projects/",
+      "SourceFileName": "WHG - Matriz - Segurança - Implantação - Fortimail Cloud.xlsx",
+      "ObjectId": "https://exemplo.com/sites/projects/Documentos Partilhados/WHG - Matriz - Segurança - Implantação - Fortimail Cloud.xlsx",
+      "SiteUrl": "https://exemplo.com/sites/projects/",
       "AppAccessContext": {
         "AADSessionId": "d81f7138-9faf-42a0-b544-20bfa85817df",
         "TokenIssuedAtTime": "2023-09-27T20:13:57",
@@ -58,7 +58,7 @@
     "level": 3,
     "hipaa": ["164.312.b", "164.312.c.1"],
     "pci_dss": ["10.6.2", "11.5"],
-    "description": "Chamado aberto de teste, favor ignorar.",
+    "description": "Regra de alerta teste",
     "groups": ["office365", "SharePointFileOperation"],
     "id": "91537"
   },

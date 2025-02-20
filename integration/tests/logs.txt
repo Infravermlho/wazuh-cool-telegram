@@ -1008,3 +1008,270 @@ Mon Feb 17 14:39:06 -03 2025| Custom-Good-Telegram | Parsing done
 Mon Feb 17 14:39:06 -03 2025| Custom-Good-Telegram | Message: {'chat_id': -4688882008, 'text': "*Chamado aberto de teste, favor ignorar\\.*\n_$\\\\\\{full\\_log\\\\\\}_\n*Groups:* \\['office365', 'SharePointFileOperation'\\]\n*Rule:* 91537 \\\\\\(Level 3\\\\\\)\n*Agent:* brsp01srv010 \\\\\\(000\\\\\\)\n", 'parse_mode': 'MarkdownV2'} 
 Mon Feb 17 14:39:07 -03 2025| Custom-Good-Telegram | POST request done, response is: <Response [200]>
  b'{"ok":true,"result":{"message_id":47,"from":{"id":7523784782,"is_bot":true,"first_name":"Teste","username":"cool_wazuh_bot"},"chat":{"id":-4688882008,"title":"Souza, Teste","type":"group","all_members_are_administrators":true},"date":1739813946,"text":"Chamado aberto de teste, favor ignorar.\\n$\\\\{full_log\\\\}\\nGroups: [\'office365\', \'SharePointFileOperation\']\\nRule: 91537 \\\\(Level 3\\\\)\\nAgent: brsp01srv010 \\\\(000\\\\)","entities":[{"offset":0,"length":39,"type":"bold"},{"offset":40,"length":13,"type":"italic"},{"offset":54,"length":7,"type":"bold"},{"offset":103,"length":5,"type":"bold"},{"offset":127,"length":6,"type":"bold"}]}}' 
+Mon Feb 17 14:59:45 -03 2025| Custom-Good-Telegram | good-telegram started: 
+Mon Feb 17 14:59:45 -03 2025| Custom-Good-Telegram | Parsing alert json 
+Mon Feb 17 14:59:45 -03 2025| Custom-Good-Telegram | Parsing done 
+Mon Feb 17 14:59:45 -03 2025| Custom-Good-Telegram | Message: {'chat_id': -4688882008, 'text': "*Chamado aberto de teste, favor ignorar\\.*\n_$\\\\\\{full\\_log\\\\\\}_\n*Groups:* \\['office365', 'SharePointFileOperation'\\]\n*Rule:* 91537 \\\\\\(Level 3\\\\\\)\n*Agent:* brsp01srv010 \\\\\\(000\\\\\\)\n", 'parse_mode': 'MarkdownV2'} 
+Mon Feb 17 14:59:46 -03 2025| Custom-Good-Telegram | POST request done, response is: <Response [200]>
+ b'{"ok":true,"result":{"message_id":48,"from":{"id":7523784782,"is_bot":true,"first_name":"Teste","username":"cool_wazuh_bot"},"chat":{"id":-4688882008,"title":"Souza, Teste","type":"group","all_members_are_administrators":true},"date":1739815185,"text":"Chamado aberto de teste, favor ignorar.\\n$\\\\{full_log\\\\}\\nGroups: [\'office365\', \'SharePointFileOperation\']\\nRule: 91537 \\\\(Level 3\\\\)\\nAgent: brsp01srv010 \\\\(000\\\\)","entities":[{"offset":0,"length":39,"type":"bold"},{"offset":40,"length":13,"type":"italic"},{"offset":54,"length":7,"type":"bold"},{"offset":103,"length":5,"type":"bold"},{"offset":127,"length":6,"type":"bold"}]}}' 
+Mon Feb 17 15:00:13 -03 2025| Custom-Good-Telegram | good-telegram started: 
+Mon Feb 17 15:00:13 -03 2025| Custom-Good-Telegram | Parsing alert json 
+Mon Feb 17 15:00:13 -03 2025| Custom-Good-Telegram | Parsing done 
+Mon Feb 17 15:00:13 -03 2025| Custom-Good-Telegram | Message: {'chat_id': -4688882008, 'text': "*Chamado aberto de teste, favor ignorar.*\n_$\\\\\\{full_log\\\\\\}_\n*Groups:* ['office365', 'SharePointFileOperation']\n*Rule:* 91537 \\\\\\(Level 3\\\\\\)\n*Agent:* brsp01srv010 \\\\\\(000\\\\\\)\n", 'parse_mode': 'MarkdownV2'} 
+Mon Feb 17 15:00:13 -03 2025| Custom-Good-Telegram | POST request done, response is: <Response [400]>
+ b'{"ok":false,"error_code":400,"description":"Bad Request: can\'t parse entities: Character \'.\' is reserved and must be escaped with the preceding \'\\\\\'"}' 
+Mon Feb 17 15:00:19 -03 2025| Custom-Good-Telegram | good-telegram started: 
+Mon Feb 17 15:00:19 -03 2025| Custom-Good-Telegram | Parsing alert json 
+Mon Feb 17 15:00:19 -03 2025| Custom-Good-Telegram | Parsing done 
+Mon Feb 17 15:00:19 -03 2025| Custom-Good-Telegram | Message: {'chat_id': -4688882008, 'text': "*Chamado aberto de teste, favor ignorar\\1*\n_$\\\\\\{full\\1log\\\\\\}_\n*Groups:* \\1'office365', 'SharePointFileOperation'\\1\n*Rule:* 91537 \\\\\\(Level 3\\\\\\)\n*Agent:* brsp01srv010 \\\\\\(000\\\\\\)\n", 'parse_mode': 'MarkdownV2'} 
+Mon Feb 17 15:00:20 -03 2025| Custom-Good-Telegram | POST request done, response is: <Response [200]>
+ b'{"ok":true,"result":{"message_id":49,"from":{"id":7523784782,"is_bot":true,"first_name":"Teste","username":"cool_wazuh_bot"},"chat":{"id":-4688882008,"title":"Souza, Teste","type":"group","all_members_are_administrators":true},"date":1739815218,"text":"Chamado aberto de teste, favor ignorar1\\n$\\\\{full1log\\\\}\\nGroups: 1\'office365\', \'SharePointFileOperation\'1\\nRule: 91537 \\\\(Level 3\\\\)\\nAgent: brsp01srv010 \\\\(000\\\\)","entities":[{"offset":0,"length":39,"type":"bold"},{"offset":40,"length":13,"type":"italic"},{"offset":54,"length":7,"type":"bold"},{"offset":103,"length":5,"type":"bold"},{"offset":127,"length":6,"type":"bold"}]}}' 
+Mon Feb 17 15:00:31 -03 2025| Custom-Good-Telegram | good-telegram started: 
+Mon Feb 17 15:00:31 -03 2025| Custom-Good-Telegram | Parsing alert json 
+Mon Feb 17 15:00:31 -03 2025| Custom-Good-Telegram | Parsing done 
+Mon Feb 17 15:00:31 -03 2025| Custom-Good-Telegram | Message: {'chat_id': -4688882008, 'text': "*Chamado aberto de teste, favor ignorar\\.*\n_$\\\\\\{full\\_log\\\\\\}_\n*Groups:* \\['office365', 'SharePointFileOperation'\\]\n*Rule:* 91537 \\\\\\(Level 3\\\\\\)\n*Agent:* brsp01srv010 \\\\\\(000\\\\\\)\n", 'parse_mode': 'MarkdownV2'} 
+Mon Feb 17 15:00:31 -03 2025| Custom-Good-Telegram | POST request done, response is: <Response [200]>
+ b'{"ok":true,"result":{"message_id":50,"from":{"id":7523784782,"is_bot":true,"first_name":"Teste","username":"cool_wazuh_bot"},"chat":{"id":-4688882008,"title":"Souza, Teste","type":"group","all_members_are_administrators":true},"date":1739815230,"text":"Chamado aberto de teste, favor ignorar.\\n$\\\\{full_log\\\\}\\nGroups: [\'office365\', \'SharePointFileOperation\']\\nRule: 91537 \\\\(Level 3\\\\)\\nAgent: brsp01srv010 \\\\(000\\\\)","entities":[{"offset":0,"length":39,"type":"bold"},{"offset":40,"length":13,"type":"italic"},{"offset":54,"length":7,"type":"bold"},{"offset":103,"length":5,"type":"bold"},{"offset":127,"length":6,"type":"bold"}]}}' 
+Mon Feb 17 15:01:48 -03 2025| Custom-Good-Telegram | good-telegram started: 
+Mon Feb 17 15:01:48 -03 2025| Custom-Good-Telegram | Parsing alert json 
+Mon Feb 17 15:01:48 -03 2025| Custom-Good-Telegram | Parsing done 
+Mon Feb 17 15:01:48 -03 2025| Custom-Good-Telegram | Message: {'chat_id': -4688882008, 'text': "*Chamado aberto de teste, favor ignorar\\.*\n_$\\\\\\{full\\_log\\\\\\}_\n*Groups:* \\['office365', 'SharePointFileOperation'\\]\n*Rule:* 91537 \\\\\\(Level 3\\\\\\)\n*Agent:* brsp01srv010 \\\\\\(000\\\\\\)\n", 'parse_mode': 'MarkdownV2'} 
+Mon Feb 17 15:01:48 -03 2025| Custom-Good-Telegram | POST request done, response is: <Response [200]>
+ b'{"ok":true,"result":{"message_id":51,"from":{"id":7523784782,"is_bot":true,"first_name":"Teste","username":"cool_wazuh_bot"},"chat":{"id":-4688882008,"title":"Souza, Teste","type":"group","all_members_are_administrators":true},"date":1739815307,"text":"Chamado aberto de teste, favor ignorar.\\n$\\\\{full_log\\\\}\\nGroups: [\'office365\', \'SharePointFileOperation\']\\nRule: 91537 \\\\(Level 3\\\\)\\nAgent: brsp01srv010 \\\\(000\\\\)","entities":[{"offset":0,"length":39,"type":"bold"},{"offset":40,"length":13,"type":"italic"},{"offset":54,"length":7,"type":"bold"},{"offset":103,"length":5,"type":"bold"},{"offset":127,"length":6,"type":"bold"}]}}' 
+Mon Feb 17 15:02:20 -03 2025| Custom-Good-Telegram | good-telegram started: 
+Mon Feb 17 15:02:20 -03 2025| Custom-Good-Telegram | Parsing alert json 
+Mon Feb 17 15:02:20 -03 2025| Custom-Good-Telegram | Traceback (most recent call last):
+  File "/home/Kolibri/Projetos/wazuh-good-telegram/integration/./custom-good-telegram.py", line 160, in <module>
+    make_alert(alert_json)
+    ~~~~~~~~~~^^^^^^^^^^^^
+  File "/home/Kolibri/Projetos/wazuh-good-telegram/integration/./custom-good-telegram.py", line 114, in make_alert
+    "text": templater.escape_brackets(content),
+            ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/Kolibri/Projetos/wazuh-good-telegram/integration/./custom-good-telegram.py", line 72, in escape_brackets
+    return _re.sub(rf"[{_re.escape(r'{}()')}]", r"\\\\\\\1", text)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/re/__init__.py", line 208, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/re/__init__.py", line 377, in _compile_template
+    return _sre.template(pattern, _parser.parse_template(repl, pattern))
+                                  ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/re/_parser.py", line 1070, in parse_template
+    addgroup(int(this[1:]), len(this) - 1)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/re/_parser.py", line 1015, in addgroup
+    raise s.error("invalid group reference %d" % index, pos)
+re.PatternError: invalid group reference 1 at position 7
+ 
+Mon Feb 17 15:02:24 -03 2025| Custom-Good-Telegram | good-telegram started: 
+Mon Feb 17 15:02:24 -03 2025| Custom-Good-Telegram | Parsing alert json 
+Mon Feb 17 15:02:24 -03 2025| Custom-Good-Telegram | Parsing done 
+Mon Feb 17 15:02:24 -03 2025| Custom-Good-Telegram | Message: {'chat_id': -4688882008, 'text': "*Chamado aberto de teste, favor ignorar\\.*\n_$\\\\\\{full\\_log\\\\\\}_\n*Groups:* \\['office365', 'SharePointFileOperation'\\]\n*Rule:* 91537 \\\\\\(Level 3\\\\\\)\n*Agent:* brsp01srv010 \\\\\\(000\\\\\\)\n", 'parse_mode': 'MarkdownV2'} 
+Mon Feb 17 15:02:25 -03 2025| Custom-Good-Telegram | POST request done, response is: <Response [200]>
+ b'{"ok":true,"result":{"message_id":52,"from":{"id":7523784782,"is_bot":true,"first_name":"Teste","username":"cool_wazuh_bot"},"chat":{"id":-4688882008,"title":"Souza, Teste","type":"group","all_members_are_administrators":true},"date":1739815344,"text":"Chamado aberto de teste, favor ignorar.\\n$\\\\{full_log\\\\}\\nGroups: [\'office365\', \'SharePointFileOperation\']\\nRule: 91537 \\\\(Level 3\\\\)\\nAgent: brsp01srv010 \\\\(000\\\\)","entities":[{"offset":0,"length":39,"type":"bold"},{"offset":40,"length":13,"type":"italic"},{"offset":54,"length":7,"type":"bold"},{"offset":103,"length":5,"type":"bold"},{"offset":127,"length":6,"type":"bold"}]}}' 
+Mon Feb 17 15:02:34 -03 2025| Custom-Good-Telegram | good-telegram started: 
+Mon Feb 17 15:02:34 -03 2025| Custom-Good-Telegram | Parsing alert json 
+Mon Feb 17 15:02:34 -03 2025| Custom-Good-Telegram | Parsing done 
+Mon Feb 17 15:02:34 -03 2025| Custom-Good-Telegram | Message: {'chat_id': -4688882008, 'text': "*Chamado aberto de teste, favor ignorar\\.*\n_$\\\\\\{full\\_log\\\\\\}_\n*Groups:* \\['office365', 'SharePointFileOperation'\\]\n*Rule:* 91537 \\\\\\(Level 3\\\\\\)\n*Agent:* brsp01srv010 \\\\\\(000\\\\\\)\n", 'parse_mode': 'MarkdownV2'} 
+Mon Feb 17 15:02:35 -03 2025| Custom-Good-Telegram | POST request done, response is: <Response [200]>
+ b'{"ok":true,"result":{"message_id":53,"from":{"id":7523784782,"is_bot":true,"first_name":"Teste","username":"cool_wazuh_bot"},"chat":{"id":-4688882008,"title":"Souza, Teste","type":"group","all_members_are_administrators":true},"date":1739815353,"text":"Chamado aberto de teste, favor ignorar.\\n$\\\\{full_log\\\\}\\nGroups: [\'office365\', \'SharePointFileOperation\']\\nRule: 91537 \\\\(Level 3\\\\)\\nAgent: brsp01srv010 \\\\(000\\\\)","entities":[{"offset":0,"length":39,"type":"bold"},{"offset":40,"length":13,"type":"italic"},{"offset":54,"length":7,"type":"bold"},{"offset":103,"length":5,"type":"bold"},{"offset":127,"length":6,"type":"bold"}]}}' 
+Mon Feb 17 15:05:31 -03 2025| Custom-Good-Telegram | good-telegram started: 
+Mon Feb 17 15:05:31 -03 2025| Custom-Good-Telegram | Parsing alert json 
+Mon Feb 17 15:05:31 -03 2025| Custom-Good-Telegram | Parsing done 
+Mon Feb 17 15:05:31 -03 2025| Custom-Good-Telegram | Message: {'chat_id': -4688882008, 'text': "*Chamado aberto de teste, favor ignorar\\.*\n_$\\{full\\_log\\}_\n*Groups:* \\['office365', 'SharePointFileOperation'\\]\n*Rule:* 91537 \\(Level 3\\)\n*Agent:* brsp01srv010 \\(000\\)\n", 'parse_mode': 'MarkdownV2'} 
+Mon Feb 17 15:05:32 -03 2025| Custom-Good-Telegram | POST request done, response is: <Response [200]>
+ b'{"ok":true,"result":{"message_id":54,"from":{"id":7523784782,"is_bot":true,"first_name":"Teste","username":"cool_wazuh_bot"},"chat":{"id":-4688882008,"title":"Souza, Teste","type":"group","all_members_are_administrators":true},"date":1739815531,"text":"Chamado aberto de teste, favor ignorar.\\n${full_log}\\nGroups: [\'office365\', \'SharePointFileOperation\']\\nRule: 91537 (Level 3)\\nAgent: brsp01srv010 (000)","entities":[{"offset":0,"length":39,"type":"bold"},{"offset":40,"length":11,"type":"italic"},{"offset":52,"length":7,"type":"bold"},{"offset":101,"length":5,"type":"bold"},{"offset":123,"length":6,"type":"bold"}]}}' 
+Mon Feb 17 15:15:23 -03 2025| Custom-Good-Telegram | good-telegram started: 
+Mon Feb 17 15:15:23 -03 2025| Custom-Good-Telegram | Parsing alert json 
+Mon Feb 17 15:15:23 -03 2025| Custom-Good-Telegram | Parsing done 
+Mon Feb 17 15:15:23 -03 2025| Custom-Good-Telegram | Message: {'chat_id': -4688882008, 'text': "*Chamado aberto de teste, favor ignorar\\.*\n_$\\{full\\_log\\}_\n*Groups:* \\['office365', 'SharePointFileOperation'\\]\n*Rule:* 91537 \\(Level 3\\)\n*Agent:* brsp01srv010 \\(000\\)\n", 'parse_mode': 'MarkdownV2'} 
+Mon Feb 17 15:15:24 -03 2025| Custom-Good-Telegram | POST request done, response is: <Response [200]>
+ b'{"ok":true,"result":{"message_id":55,"from":{"id":7523784782,"is_bot":true,"first_name":"Teste","username":"cool_wazuh_bot"},"chat":{"id":-4688882008,"title":"Souza, Teste","type":"group","all_members_are_administrators":true},"date":1739816122,"text":"Chamado aberto de teste, favor ignorar.\\n${full_log}\\nGroups: [\'office365\', \'SharePointFileOperation\']\\nRule: 91537 (Level 3)\\nAgent: brsp01srv010 (000)","entities":[{"offset":0,"length":39,"type":"bold"},{"offset":40,"length":11,"type":"italic"},{"offset":52,"length":7,"type":"bold"},{"offset":101,"length":5,"type":"bold"},{"offset":123,"length":6,"type":"bold"}]}}' 
+Mon Feb 17 15:18:12 -03 2025| Custom-Good-Telegram | good-telegram started: 
+Mon Feb 17 15:18:12 -03 2025| Custom-Good-Telegram | Parsing alert json 
+Mon Feb 17 15:18:12 -03 2025| Custom-Good-Telegram | Parsing done 
+Mon Feb 17 15:18:12 -03 2025| Custom-Good-Telegram | Message: {'chat_id': -4688882008, 'text': "*Chamado aberto de teste, favor ignorar\\.*\n_$\\{full\\_log\\}_\n*Groups:* \\['office365', 'SharePointFileOperation'\\]\n*Rule:* 91537 \\(Level 3\\)\n*Agent:* brsp01srv010 \\(000\\)\n", 'parse_mode': 'MarkdownV2'} 
+Mon Feb 17 15:18:13 -03 2025| Custom-Good-Telegram | POST request done, response is: <Response [200]>
+ b'{"ok":true,"result":{"message_id":56,"from":{"id":7523784782,"is_bot":true,"first_name":"Teste","username":"cool_wazuh_bot"},"chat":{"id":-4688882008,"title":"Souza, Teste","type":"group","all_members_are_administrators":true},"date":1739816291,"text":"Chamado aberto de teste, favor ignorar.\\n${full_log}\\nGroups: [\'office365\', \'SharePointFileOperation\']\\nRule: 91537 (Level 3)\\nAgent: brsp01srv010 (000)","entities":[{"offset":0,"length":39,"type":"bold"},{"offset":40,"length":11,"type":"italic"},{"offset":52,"length":7,"type":"bold"},{"offset":101,"length":5,"type":"bold"},{"offset":123,"length":6,"type":"bold"}]}}' 
+Mon Feb 17 15:18:38 -03 2025| Custom-Good-Telegram | good-telegram started: 
+Mon Feb 17 15:18:38 -03 2025| Custom-Good-Telegram | Parsing alert json 
+Mon Feb 17 15:18:38 -03 2025| Custom-Good-Telegram | Parsing done 
+Mon Feb 17 15:18:38 -03 2025| Custom-Good-Telegram | Message: {'chat_id': -4688882008, 'text': "*Chamado aberto de teste, favor ignorar\\.*\n_$\\{full\\_log\\}_\n*Groups:* \\['office365', 'SharePointFileOperation'\\]\n*Rule:* 91537 \\(Level 3\\)\n*Agent:* brsp01srv010 \\(000\\)\n", 'parse_mode': 'MarkdownV2'} 
+Mon Feb 17 15:18:39 -03 2025| Custom-Good-Telegram | POST request done, response is: <Response [200]>
+ b'{"ok":true,"result":{"message_id":57,"from":{"id":7523784782,"is_bot":true,"first_name":"Teste","username":"cool_wazuh_bot"},"chat":{"id":-4688882008,"title":"Souza, Teste","type":"group","all_members_are_administrators":true},"date":1739816317,"text":"Chamado aberto de teste, favor ignorar.\\n${full_log}\\nGroups: [\'office365\', \'SharePointFileOperation\']\\nRule: 91537 (Level 3)\\nAgent: brsp01srv010 (000)","entities":[{"offset":0,"length":39,"type":"bold"},{"offset":40,"length":11,"type":"italic"},{"offset":52,"length":7,"type":"bold"},{"offset":101,"length":5,"type":"bold"},{"offset":123,"length":6,"type":"bold"}]}}' 
+Mon Feb 17 15:18:57 -03 2025| Custom-Good-Telegram | good-telegram started: 
+Mon Feb 17 15:18:57 -03 2025| Custom-Good-Telegram | Parsing alert json 
+Mon Feb 17 15:18:57 -03 2025| Custom-Good-Telegram | Parsing done 
+Mon Feb 17 15:18:57 -03 2025| Custom-Good-Telegram | Message: {'chat_id': -4688882008, 'text': "*Chamado aberto de teste, favor ignorar\\.*\n_$\\{full\\_log\\}_\n*Groups:* \\['office365', 'SharePointFileOperation'\\]\n*Rule:* 91537 \\(Level 3\\)\n*Agent:* brsp01srv010 \\(000\\)\n", 'parse_mode': 'MarkdownV2'} 
+Mon Feb 17 15:18:58 -03 2025| Custom-Good-Telegram | POST request done, response is: <Response [200]>
+ b'{"ok":true,"result":{"message_id":58,"from":{"id":7523784782,"is_bot":true,"first_name":"Teste","username":"cool_wazuh_bot"},"chat":{"id":-4688882008,"title":"Souza, Teste","type":"group","all_members_are_administrators":true},"date":1739816337,"text":"Chamado aberto de teste, favor ignorar.\\n${full_log}\\nGroups: [\'office365\', \'SharePointFileOperation\']\\nRule: 91537 (Level 3)\\nAgent: brsp01srv010 (000)","entities":[{"offset":0,"length":39,"type":"bold"},{"offset":40,"length":11,"type":"italic"},{"offset":52,"length":7,"type":"bold"},{"offset":101,"length":5,"type":"bold"},{"offset":123,"length":6,"type":"bold"}]}}' 
+Mon Feb 17 15:19:42 -03 2025| Custom-Good-Telegram | good-telegram started: 
+Mon Feb 17 15:19:42 -03 2025| Custom-Good-Telegram | Parsing alert json 
+Mon Feb 17 15:19:42 -03 2025| Custom-Good-Telegram | Parsing done 
+Mon Feb 17 15:19:42 -03 2025| Custom-Good-Telegram | Message: {'chat_id': -4688882008, 'text': "*Chamado aberto de teste, favor ignorar\\.*\n_$\\{full\\_log\\}_\n*Groups:* \\['office365', 'SharePointFileOperation'\\]\n*Rule:* 91537 \\(Level 3\\)\n*Agent:* brsp01srv010 \\(000\\)\n", 'parse_mode': 'MarkdownV2'} 
+Mon Feb 17 15:19:43 -03 2025| Custom-Good-Telegram | POST request done, response is: <Response [200]>
+ b'{"ok":true,"result":{"message_id":59,"from":{"id":7523784782,"is_bot":true,"first_name":"Teste","username":"cool_wazuh_bot"},"chat":{"id":-4688882008,"title":"Souza, Teste","type":"group","all_members_are_administrators":true},"date":1739816382,"text":"Chamado aberto de teste, favor ignorar.\\n${full_log}\\nGroups: [\'office365\', \'SharePointFileOperation\']\\nRule: 91537 (Level 3)\\nAgent: brsp01srv010 (000)","entities":[{"offset":0,"length":39,"type":"bold"},{"offset":40,"length":11,"type":"italic"},{"offset":52,"length":7,"type":"bold"},{"offset":101,"length":5,"type":"bold"},{"offset":123,"length":6,"type":"bold"}]}}' 
+Mon Feb 17 15:21:27 -03 2025| Custom-Good-Telegram | good-telegram started: 
+Mon Feb 17 15:21:27 -03 2025| Custom-Good-Telegram | Parsing alert json 
+Mon Feb 17 15:21:27 -03 2025| Custom-Good-Telegram | Parsing done 
+Mon Feb 17 15:21:27 -03 2025| Custom-Good-Telegram | Message: {'chat_id': -4688882008, 'text': "happy *Chamado aberto de teste, favor ignorar\\.* *$\\{rule\\.rule\\_id\\}* *3*\n_$\\{full\\_log\\}_\n*Groups:* \\['office365', 'SharePointFileOperation'\\]\n*Rule:* 91537 \\(Level 3\\)\n*Agent:* brsp01srv010 \\(000\\)\n", 'parse_mode': 'MarkdownV2'} 
+Mon Feb 17 15:21:28 -03 2025| Custom-Good-Telegram | POST request done, response is: <Response [200]>
+ b'{"ok":true,"result":{"message_id":60,"from":{"id":7523784782,"is_bot":true,"first_name":"Teste","username":"cool_wazuh_bot"},"chat":{"id":-4688882008,"title":"Souza, Teste","type":"group","all_members_are_administrators":true},"date":1739816486,"text":"happy Chamado aberto de teste, favor ignorar. ${rule.rule_id} 3\\n${full_log}\\nGroups: [\'office365\', \'SharePointFileOperation\']\\nRule: 91537 (Level 3)\\nAgent: brsp01srv010 (000)","entities":[{"offset":6,"length":39,"type":"bold"},{"offset":46,"length":15,"type":"bold"},{"offset":62,"length":1,"type":"bold"},{"offset":64,"length":11,"type":"italic"},{"offset":76,"length":7,"type":"bold"},{"offset":125,"length":5,"type":"bold"},{"offset":147,"length":6,"type":"bold"}]}}' 
+Mon Feb 17 15:24:22 -03 2025| Custom-Good-Telegram | good-telegram started: 
+Mon Feb 17 15:24:22 -03 2025| Custom-Good-Telegram | Parsing alert json 
+Mon Feb 17 15:24:22 -03 2025| Custom-Good-Telegram | Parsing done 
+Mon Feb 17 15:24:22 -03 2025| Custom-Good-Telegram | Message: {'chat_id': -4688882008, 'text': "*Chamado aberto de teste, favor ignorar\\.*\n_$\\{full\\_log\\}_\n*Groups:* \\['office365', 'SharePointFileOperation'\\]\n*Rule:* 91537 \\(Level 3\\)\n*Agent:* brsp01srv010 \\(000\\)\n", 'parse_mode': 'MarkdownV2'} 
+Mon Feb 17 15:24:23 -03 2025| Custom-Good-Telegram | POST request done, response is: <Response [200]>
+ b'{"ok":true,"result":{"message_id":61,"from":{"id":7523784782,"is_bot":true,"first_name":"Teste","username":"cool_wazuh_bot"},"chat":{"id":-4688882008,"title":"Souza, Teste","type":"group","all_members_are_administrators":true},"date":1739816662,"text":"Chamado aberto de teste, favor ignorar.\\n${full_log}\\nGroups: [\'office365\', \'SharePointFileOperation\']\\nRule: 91537 (Level 3)\\nAgent: brsp01srv010 (000)","entities":[{"offset":0,"length":39,"type":"bold"},{"offset":40,"length":11,"type":"italic"},{"offset":52,"length":7,"type":"bold"},{"offset":101,"length":5,"type":"bold"},{"offset":123,"length":6,"type":"bold"}]}}' 
+Mon Feb 17 15:24:36 -03 2025| Custom-Good-Telegram | good-telegram started: 
+Mon Feb 17 15:24:36 -03 2025| Custom-Good-Telegram | Parsing alert json 
+Mon Feb 17 15:24:36 -03 2025| Custom-Good-Telegram | Parsing done 
+Mon Feb 17 15:24:36 -03 2025| Custom-Good-Telegram | Message: {'chat_id': -4688882008, 'text': "*Chamado aberto de teste, favor ignorar\\.*\n_$\\{full\\_log\\}_\n*Groups:* \\['office365', 'SharePointFileOperation'\\]\n*Rule:* 91537 \\(Level 3\\)\n*Agent:* brsp01srv010 \\(000\\)\n", 'parse_mode': 'MarkdownV2'} 
+Mon Feb 17 15:24:36 -03 2025| Custom-Good-Telegram | POST request done, response is: <Response [200]>
+ b'{"ok":true,"result":{"message_id":62,"from":{"id":7523784782,"is_bot":true,"first_name":"Teste","username":"cool_wazuh_bot"},"chat":{"id":-4688882008,"title":"Souza, Teste","type":"group","all_members_are_administrators":true},"date":1739816675,"text":"Chamado aberto de teste, favor ignorar.\\n${full_log}\\nGroups: [\'office365\', \'SharePointFileOperation\']\\nRule: 91537 (Level 3)\\nAgent: brsp01srv010 (000)","entities":[{"offset":0,"length":39,"type":"bold"},{"offset":40,"length":11,"type":"italic"},{"offset":52,"length":7,"type":"bold"},{"offset":101,"length":5,"type":"bold"},{"offset":123,"length":6,"type":"bold"}]}}' 
+Mon Feb 17 15:25:59 -03 2025| Custom-Good-Telegram | good-telegram started: 
+Mon Feb 17 15:25:59 -03 2025| Custom-Good-Telegram | Parsing alert json 
+Mon Feb 17 15:25:59 -03 2025| Custom-Good-Telegram | Parsing done 
+Mon Feb 17 15:25:59 -03 2025| Custom-Good-Telegram | Message: {'chat_id': -4688882008, 'text': "*Chamado aberto de teste, favor ignorar\\.* *$\\{rule\\.rule\\_id\\}*\n>$\\{data\\.office364\\.ObjectId\\}\n*Groups:* \\['office365', 'SharePointFileOperation'\\]\n*Rule:* 91537 \\(Level 3\\)\n*Agent:* brsp01srv010 \\(000\\)\n", 'parse_mode': 'MarkdownV2'} 
+Mon Feb 17 15:26:00 -03 2025| Custom-Good-Telegram | POST request done, response is: <Response [200]>
+ b'{"ok":true,"result":{"message_id":63,"from":{"id":7523784782,"is_bot":true,"first_name":"Teste","username":"cool_wazuh_bot"},"chat":{"id":-4688882008,"title":"Souza, Teste","type":"group","all_members_are_administrators":true},"date":1739816759,"text":"Chamado aberto de teste, favor ignorar. ${rule.rule_id}\\n${data.office364.ObjectId}\\nGroups: [\'office365\', \'SharePointFileOperation\']\\nRule: 91537 (Level 3)\\nAgent: brsp01srv010 (000)","entities":[{"offset":0,"length":39,"type":"bold"},{"offset":40,"length":15,"type":"bold"},{"offset":56,"length":27,"type":"blockquote"},{"offset":83,"length":7,"type":"bold"},{"offset":132,"length":5,"type":"bold"},{"offset":154,"length":6,"type":"bold"}]}}' 
+Mon Feb 17 15:27:10 -03 2025| Custom-Good-Telegram | good-telegram started: 
+Mon Feb 17 15:27:10 -03 2025| Custom-Good-Telegram | Parsing alert json 
+Mon Feb 17 15:27:10 -03 2025| Custom-Good-Telegram | Parsing done 
+Mon Feb 17 15:27:10 -03 2025| Custom-Good-Telegram | Message: {'chat_id': -4688882008, 'text': "*Chamado aberto de teste, favor ignorar\\.*\n$\\{data\\.office364\\.ObjectId\\}\n*Groups:* \\['office365', 'SharePointFileOperation'\\]\n*Rule:* 91537 \\(Level 3\\)\n*Agent:* brsp01srv010 \\(000\\)\n", 'parse_mode': 'MarkdownV2'} 
+Mon Feb 17 15:27:10 -03 2025| Custom-Good-Telegram | POST request done, response is: <Response [200]>
+ b'{"ok":true,"result":{"message_id":64,"from":{"id":7523784782,"is_bot":true,"first_name":"Teste","username":"cool_wazuh_bot"},"chat":{"id":-4688882008,"title":"Souza, Teste","type":"group","all_members_are_administrators":true},"date":1739816829,"text":"Chamado aberto de teste, favor ignorar.\\n${data.office364.ObjectId}\\nGroups: [\'office365\', \'SharePointFileOperation\']\\nRule: 91537 (Level 3)\\nAgent: brsp01srv010 (000)","entities":[{"offset":0,"length":39,"type":"bold"},{"offset":67,"length":7,"type":"bold"},{"offset":116,"length":5,"type":"bold"},{"offset":138,"length":6,"type":"bold"}]}}' 
+Mon Feb 17 15:29:00 -03 2025| Custom-Good-Telegram | good-telegram started: 
+Mon Feb 17 15:29:00 -03 2025| Custom-Good-Telegram | Parsing alert json 
+Mon Feb 17 15:29:00 -03 2025| Custom-Good-Telegram | Parsing done 
+Mon Feb 17 15:29:00 -03 2025| Custom-Good-Telegram | Message: {'chat_id': -4688882008, 'text': "*Chamado aberto de teste, favor ignorar\\.*\n>$\\{data\\.office364\\.ObjectId\\}\n*Groups:* \\['office365', 'SharePointFileOperation'\\]\n*Rule:* 91537 \\(Level 3\\)\n*Agent:* brsp01srv010 \\(000\\)\n", 'parse_mode': 'MarkdownV2'} 
+Mon Feb 17 15:29:01 -03 2025| Custom-Good-Telegram | POST request done, response is: <Response [200]>
+ b'{"ok":true,"result":{"message_id":65,"from":{"id":7523784782,"is_bot":true,"first_name":"Teste","username":"cool_wazuh_bot"},"chat":{"id":-4688882008,"title":"Souza, Teste","type":"group","all_members_are_administrators":true},"date":1739816939,"text":"Chamado aberto de teste, favor ignorar.\\n${data.office364.ObjectId}\\nGroups: [\'office365\', \'SharePointFileOperation\']\\nRule: 91537 (Level 3)\\nAgent: brsp01srv010 (000)","entities":[{"offset":0,"length":39,"type":"bold"},{"offset":40,"length":27,"type":"blockquote"},{"offset":67,"length":7,"type":"bold"},{"offset":116,"length":5,"type":"bold"},{"offset":138,"length":6,"type":"bold"}]}}' 
+Mon Feb 17 15:29:24 -03 2025| Custom-Good-Telegram | good-telegram started: 
+Mon Feb 17 15:29:24 -03 2025| Custom-Good-Telegram | Parsing alert json 
+Mon Feb 17 15:29:24 -03 2025| Custom-Good-Telegram | Traceback (most recent call last):
+  File "/home/Kolibri/Projetos/wazuh-good-telegram/integration/./custom-good-telegram.py", line 161, in <module>
+    make_alert(alert_json)
+    ~~~~~~~~~~^^^^^^^^^^^^
+  File "/home/Kolibri/Projetos/wazuh-good-telegram/integration/./custom-good-telegram.py", line 111, in make_alert
+    content = f"{templater.substitute(rule_id["message"], alert_json)}"
+                 ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Kolibri/Projetos/wazuh-good-telegram/integration/./custom-good-telegram.py", line 67, in substitute
+    return self.pattern.sub(convert, template)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/Kolibri/Projetos/wazuh-good-telegram/integration/./custom-good-telegram.py", line 58, in convert
+    print(cursor.key)
+          ^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'key'. Did you mean: 'keys'?
+ 
+Mon Feb 17 15:29:49 -03 2025| Custom-Good-Telegram | good-telegram started: 
+Mon Feb 17 15:29:49 -03 2025| Custom-Good-Telegram | Parsing alert json 
+Mon Feb 17 15:29:49 -03 2025| Custom-Good-Telegram | Parsing done 
+Mon Feb 17 15:29:49 -03 2025| Custom-Good-Telegram | Message: {'chat_id': -4688882008, 'text': "*Chamado aberto de teste, favor ignorar\\.*\n>$\\{data\\.office364\\.ObjectId\\}\n*Groups:* \\['office365', 'SharePointFileOperation'\\]\n*Rule:* 91537 \\(Level 3\\)\n*Agent:* brsp01srv010 \\(000\\)\n", 'parse_mode': 'MarkdownV2'} 
+Mon Feb 17 15:29:50 -03 2025| Custom-Good-Telegram | POST request done, response is: <Response [200]>
+ b'{"ok":true,"result":{"message_id":66,"from":{"id":7523784782,"is_bot":true,"first_name":"Teste","username":"cool_wazuh_bot"},"chat":{"id":-4688882008,"title":"Souza, Teste","type":"group","all_members_are_administrators":true},"date":1739816988,"text":"Chamado aberto de teste, favor ignorar.\\n${data.office364.ObjectId}\\nGroups: [\'office365\', \'SharePointFileOperation\']\\nRule: 91537 (Level 3)\\nAgent: brsp01srv010 (000)","entities":[{"offset":0,"length":39,"type":"bold"},{"offset":40,"length":27,"type":"blockquote"},{"offset":67,"length":7,"type":"bold"},{"offset":116,"length":5,"type":"bold"},{"offset":138,"length":6,"type":"bold"}]}}' 
+Mon Feb 17 15:30:24 -03 2025| Custom-Good-Telegram | good-telegram started: 
+Mon Feb 17 15:30:24 -03 2025| Custom-Good-Telegram | Parsing alert json 
+Mon Feb 17 15:30:24 -03 2025| Custom-Good-Telegram | Parsing done 
+Mon Feb 17 15:30:24 -03 2025| Custom-Good-Telegram | Message: {'chat_id': -4688882008, 'text': "*Chamado aberto de teste, favor ignorar\\.*\n>$\\{data\\.office364\\.ObjectId\\}\n*Groups:* \\['office365', 'SharePointFileOperation'\\]\n*Rule:* 91537 \\(Level 3\\)\n*Agent:* brsp01srv010 \\(000\\)\n", 'parse_mode': 'MarkdownV2'} 
+Mon Feb 17 15:30:25 -03 2025| Custom-Good-Telegram | POST request done, response is: <Response [200]>
+ b'{"ok":true,"result":{"message_id":67,"from":{"id":7523784782,"is_bot":true,"first_name":"Teste","username":"cool_wazuh_bot"},"chat":{"id":-4688882008,"title":"Souza, Teste","type":"group","all_members_are_administrators":true},"date":1739817023,"text":"Chamado aberto de teste, favor ignorar.\\n${data.office364.ObjectId}\\nGroups: [\'office365\', \'SharePointFileOperation\']\\nRule: 91537 (Level 3)\\nAgent: brsp01srv010 (000)","entities":[{"offset":0,"length":39,"type":"bold"},{"offset":40,"length":27,"type":"blockquote"},{"offset":67,"length":7,"type":"bold"},{"offset":116,"length":5,"type":"bold"},{"offset":138,"length":6,"type":"bold"}]}}' 
+Mon Feb 17 15:31:48 -03 2025| Custom-Good-Telegram | good-telegram started: 
+Mon Feb 17 15:31:48 -03 2025| Custom-Good-Telegram | Parsing alert json 
+Mon Feb 17 15:31:48 -03 2025| Custom-Good-Telegram | Parsing done 
+Mon Feb 17 15:31:48 -03 2025| Custom-Good-Telegram | Message: {'chat_id': -4688882008, 'text': "*Chamado aberto de teste, favor ignorar\\.*\n>$\\{data\\.office364\\.ObjectId\\}\n*Groups:* \\['office365', 'SharePointFileOperation'\\]\n*Rule:* 91537 \\(Level 3\\)\n*Agent:* brsp01srv010 \\(000\\)\n", 'parse_mode': 'MarkdownV2'} 
+Mon Feb 17 15:31:48 -03 2025| Custom-Good-Telegram | POST request done, response is: <Response [200]>
+ b'{"ok":true,"result":{"message_id":68,"from":{"id":7523784782,"is_bot":true,"first_name":"Teste","username":"cool_wazuh_bot"},"chat":{"id":-4688882008,"title":"Souza, Teste","type":"group","all_members_are_administrators":true},"date":1739817107,"text":"Chamado aberto de teste, favor ignorar.\\n${data.office364.ObjectId}\\nGroups: [\'office365\', \'SharePointFileOperation\']\\nRule: 91537 (Level 3)\\nAgent: brsp01srv010 (000)","entities":[{"offset":0,"length":39,"type":"bold"},{"offset":40,"length":27,"type":"blockquote"},{"offset":67,"length":7,"type":"bold"},{"offset":116,"length":5,"type":"bold"},{"offset":138,"length":6,"type":"bold"}]}}' 
+Mon Feb 17 15:32:37 -03 2025| Custom-Good-Telegram | good-telegram started: 
+Mon Feb 17 15:32:37 -03 2025| Custom-Good-Telegram | Parsing alert json 
+Mon Feb 17 15:32:37 -03 2025| Custom-Good-Telegram | Parsing done 
+Mon Feb 17 15:32:37 -03 2025| Custom-Good-Telegram | Message: {'chat_id': -4688882008, 'text': "*Chamado aberto de teste, favor ignorar\\.*\n>$\\{data\\.office364\\.ObjectId\\}\n*Groups:* \\['office365', 'SharePointFileOperation'\\]\n*Rule:* 91537 \\(Level 3\\)\n*Agent:* brsp01srv010 \\(000\\)\n", 'parse_mode': 'MarkdownV2'} 
+Mon Feb 17 15:32:38 -03 2025| Custom-Good-Telegram | POST request done, response is: <Response [200]>
+ b'{"ok":true,"result":{"message_id":69,"from":{"id":7523784782,"is_bot":true,"first_name":"Teste","username":"cool_wazuh_bot"},"chat":{"id":-4688882008,"title":"Souza, Teste","type":"group","all_members_are_administrators":true},"date":1739817157,"text":"Chamado aberto de teste, favor ignorar.\\n${data.office364.ObjectId}\\nGroups: [\'office365\', \'SharePointFileOperation\']\\nRule: 91537 (Level 3)\\nAgent: brsp01srv010 (000)","entities":[{"offset":0,"length":39,"type":"bold"},{"offset":40,"length":27,"type":"blockquote"},{"offset":67,"length":7,"type":"bold"},{"offset":116,"length":5,"type":"bold"},{"offset":138,"length":6,"type":"bold"}]}}' 
+Mon Feb 17 15:33:32 -03 2025| Custom-Good-Telegram | good-telegram started: 
+Mon Feb 17 15:33:32 -03 2025| Custom-Good-Telegram | Parsing alert json 
+Mon Feb 17 15:33:32 -03 2025| Custom-Good-Telegram | Traceback (most recent call last):
+  File "/home/Kolibri/Projetos/wazuh-good-telegram/integration/./custom-good-telegram.py", line 167, in <module>
+    make_alert(alert_json)
+    ~~~~~~~~~~^^^^^^^^^^^^
+  File "/home/Kolibri/Projetos/wazuh-good-telegram/integration/./custom-good-telegram.py", line 117, in make_alert
+    content = f"{templater.substitute(rule_id["message"], alert_json)}"
+                 ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Kolibri/Projetos/wazuh-good-telegram/integration/./custom-good-telegram.py", line 73, in substitute
+    return self.pattern.sub(convert, template)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/Kolibri/Projetos/wazuh-good-telegram/integration/./custom-good-telegram.py", line 62, in convert
+    print(cursor[key])
+          ~~~~~~^^^^^
+KeyError: 'office364'
+ 
+Mon Feb 17 15:34:17 -03 2025| Custom-Good-Telegram | good-telegram started: 
+Mon Feb 17 15:34:17 -03 2025| Custom-Good-Telegram | Parsing alert json 
+Mon Feb 17 15:34:17 -03 2025| Custom-Good-Telegram | Traceback (most recent call last):
+  File "/home/Kolibri/Projetos/wazuh-good-telegram/integration/./custom-good-telegram.py", line 168, in <module>
+    make_alert(alert_json)
+    ~~~~~~~~~~^^^^^^^^^^^^
+  File "/home/Kolibri/Projetos/wazuh-good-telegram/integration/./custom-good-telegram.py", line 118, in make_alert
+    content = f"{templater.substitute(rule_id["message"], alert_json)}"
+                 ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Kolibri/Projetos/wazuh-good-telegram/integration/./custom-good-telegram.py", line 74, in substitute
+    return self.pattern.sub(convert, template)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/Kolibri/Projetos/wazuh-good-telegram/integration/./custom-good-telegram.py", line 63, in convert
+    print(cursor[key])
+          ~~~~~~^^^^^
+KeyError: 'office364'
+ 
+Mon Feb 17 15:34:40 -03 2025| Custom-Good-Telegram | good-telegram started: 
+Mon Feb 17 15:34:40 -03 2025| Custom-Good-Telegram | Parsing alert json 
+Mon Feb 17 15:34:40 -03 2025| Custom-Good-Telegram | Traceback (most recent call last):
+  File "/home/Kolibri/Projetos/wazuh-good-telegram/integration/./custom-good-telegram.py", line 169, in <module>
+    make_alert(alert_json)
+    ~~~~~~~~~~^^^^^^^^^^^^
+  File "/home/Kolibri/Projetos/wazuh-good-telegram/integration/./custom-good-telegram.py", line 119, in make_alert
+    content = f"{templater.substitute(rule_id["message"], alert_json)}"
+                 ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Kolibri/Projetos/wazuh-good-telegram/integration/./custom-good-telegram.py", line 75, in substitute
+    return self.pattern.sub(convert, template)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/Kolibri/Projetos/wazuh-good-telegram/integration/./custom-good-telegram.py", line 64, in convert
+    print(cursor[key])
+          ~~~~~~^^^^^
+KeyError: 'office364'
+ 
+Mon Feb 17 15:35:16 -03 2025| Custom-Good-Telegram | good-telegram started: 
+Mon Feb 17 15:35:16 -03 2025| Custom-Good-Telegram | Parsing alert json 
+Mon Feb 17 15:35:16 -03 2025| Custom-Good-Telegram | Parsing done 
+Mon Feb 17 15:35:16 -03 2025| Custom-Good-Telegram | Message: {'chat_id': -4688882008, 'text': "*Chamado aberto de teste, favor ignorar\\.*\n>https://sharepoint\\.com/sites/projects/Documentos Partilhados/WHG \\- Matriz \\- Segurança \\- Implantação \\- Fortimail Cloud\\.xlsx\n*Groups:* \\['office365', 'SharePointFileOperation'\\]\n*Rule:* 91537 \\(Level 3\\)\n*Agent:* brsp01srv010 \\(000\\)\n", 'parse_mode': 'MarkdownV2'} 
+Mon Feb 17 15:35:16 -03 2025| Custom-Good-Telegram | POST request done, response is: <Response [200]>
+ b'{"ok":true,"result":{"message_id":70,"from":{"id":7523784782,"is_bot":true,"first_name":"Teste","username":"cool_wazuh_bot"},"chat":{"id":-4688882008,"title":"Souza, Teste","type":"group","all_members_are_administrators":true},"date":1739817315,"text":"Chamado aberto de teste, favor ignorar.\\nhttps://sharepoint.com/sites/projects/Documentos Partilhados/WHG - Matriz - Seguran\\u00e7a - Implanta\\u00e7\\u00e3o - Fortimail Cloud.xlsx\\nGroups: [\'office365\', \'SharePointFileOperation\']\\nRule: 91537 (Level 3)\\nAgent: brsp01srv010 (000)","entities":[{"offset":0,"length":39,"type":"bold"},{"offset":40,"length":123,"type":"blockquote"},{"offset":40,"length":48,"type":"url"},{"offset":163,"length":7,"type":"bold"},{"offset":212,"length":5,"type":"bold"},{"offset":234,"length":6,"type":"bold"}],"link_preview_options":{"url":"https://sharepoint.com/sites/projects/Documentos"}}}' 
+Mon Feb 17 15:38:32 -03 2025| Custom-Good-Telegram | good-telegram started: 
+Mon Feb 17 15:38:32 -03 2025| Custom-Good-Telegram | Parsing alert json 
+Mon Feb 17 15:38:32 -03 2025| Custom-Good-Telegram | Parsing done 
+Mon Feb 17 15:38:32 -03 2025| Custom-Good-Telegram | Message: {'chat_id': -4688882008, 'text': "*Chamado aberto de teste, favor ignorar\\.*\n>$\\{data\\.office365\\.operation\\}\n>https://sharepoint\\.com/sites/projects/Documentos Partilhados/WHG \\- Matriz \\- Segurança \\- Implantação \\- Fortimail Cloud\\.xlsx\n*Groups:* \\['office365', 'SharePointFileOperation'\\]\n*Rule:* 91537 \\(Level 3\\)\n*Agent:* brsp01srv010 \\(000\\)\n*Local:* Brazil\n", 'parse_mode': 'MarkdownV2'} 
+Mon Feb 17 15:38:32 -03 2025| Custom-Good-Telegram | POST request done, response is: <Response [200]>
+ b'{"ok":true,"result":{"message_id":71,"from":{"id":7523784782,"is_bot":true,"first_name":"Teste","username":"cool_wazuh_bot"},"chat":{"id":-4688882008,"title":"Souza, Teste","type":"group","all_members_are_administrators":true},"date":1739817511,"text":"Chamado aberto de teste, favor ignorar.\\n${data.office365.operation}\\nhttps://sharepoint.com/sites/projects/Documentos Partilhados/WHG - Matriz - Seguran\\u00e7a - Implanta\\u00e7\\u00e3o - Fortimail Cloud.xlsx\\nGroups: [\'office365\', \'SharePointFileOperation\']\\nRule: 91537 (Level 3)\\nAgent: brsp01srv010 (000)\\nLocal: Brazil","entities":[{"offset":0,"length":39,"type":"bold"},{"offset":40,"length":151,"type":"blockquote"},{"offset":68,"length":48,"type":"url"},{"offset":191,"length":7,"type":"bold"},{"offset":240,"length":5,"type":"bold"},{"offset":262,"length":6,"type":"bold"},{"offset":288,"length":6,"type":"bold"}],"link_preview_options":{"url":"https://sharepoint.com/sites/projects/Documentos"}}}' 
+Mon Feb 17 15:40:44 -03 2025| Custom-Good-Telegram | good-telegram started: 
+Mon Feb 17 15:40:44 -03 2025| Custom-Good-Telegram | Parsing alert json 
+Mon Feb 17 15:40:44 -03 2025| Custom-Good-Telegram | Parsing done 
+Mon Feb 17 15:40:44 -03 2025| Custom-Good-Telegram | Message: {'chat_id': -4688882008, 'text': "*Chamado aberto de teste, favor ignorar\\.*\n>$\\{data\\.office365\\.operation\\}\n>ARQUIVO: WHG \\- Matriz \\- Segurança \\- Implantação \\- Fortimail Cloud\\.xlsx\n>LOCAL DO ARQUIVO: https://exemplo\\.com/sites/projects/Documentos Partilhados/WHG \\- Matriz \\- Segurança \\- Implantação \\- Fortimail Cloud\\.xlsx\n*Groups:* \\['office365', 'SharePointFileOperation'\\]\n*Rule:* 91537 \\(Level 3\\)\n*Agent:* brsp01srv010 \\(000\\)\n*Local:* Brazil\n", 'parse_mode': 'MarkdownV2'} 
+Mon Feb 17 15:40:45 -03 2025| Custom-Good-Telegram | POST request done, response is: <Response [200]>
+ b'{"ok":true,"result":{"message_id":72,"from":{"id":7523784782,"is_bot":true,"first_name":"Teste","username":"cool_wazuh_bot"},"chat":{"id":-4688882008,"title":"Souza, Teste","type":"group","all_members_are_administrators":true},"date":1739817643,"text":"Chamado aberto de teste, favor ignorar.\\n${data.office365.operation}\\nARQUIVO: WHG - Matriz - Seguran\\u00e7a - Implanta\\u00e7\\u00e3o - Fortimail Cloud.xlsx\\nLOCAL DO ARQUIVO: https://exemplo.com/sites/projects/Documentos Partilhados/WHG - Matriz - Seguran\\u00e7a - Implanta\\u00e7\\u00e3o - Fortimail Cloud.xlsx\\nGroups: [\'office365\', \'SharePointFileOperation\']\\nRule: 91537 (Level 3)\\nAgent: brsp01srv010 (000)\\nLocal: Brazil","entities":[{"offset":0,"length":39,"type":"bold"},{"offset":40,"length":237,"type":"blockquote"},{"offset":157,"length":45,"type":"url"},{"offset":277,"length":7,"type":"bold"},{"offset":326,"length":5,"type":"bold"},{"offset":348,"length":6,"type":"bold"},{"offset":374,"length":6,"type":"bold"}],"link_preview_options":{"url":"https://exemplo.com/sites/projects/Documentos"}}}' 
+Mon Feb 17 15:41:34 -03 2025| Custom-Good-Telegram | good-telegram started: 
+Mon Feb 17 15:41:34 -03 2025| Custom-Good-Telegram | Parsing alert json 
+Mon Feb 17 15:41:34 -03 2025| Custom-Good-Telegram | Parsing done 
+Mon Feb 17 15:41:34 -03 2025| Custom-Good-Telegram | Message: {'chat_id': -4688882008, 'text': "*Chamado aberto de teste, favor ignorar\\.*\n>FileAccessed\n>ARQUIVO: WHG \\- Matriz \\- Segurança \\- Implantação \\- Fortimail Cloud\\.xlsx\n>LOCAL DO ARQUIVO: https://exemplo\\.com/sites/projects/Documentos Partilhados/WHG \\- Matriz \\- Segurança \\- Implantação \\- Fortimail Cloud\\.xlsx\n*Groups:* \\['office365', 'SharePointFileOperation'\\]\n*Rule:* 91537 \\(Level 3\\)\n*Agent:* brsp01srv010 \\(000\\)\n*Local:* Brazil\n", 'parse_mode': 'MarkdownV2'} 
+Mon Feb 17 15:41:35 -03 2025| Custom-Good-Telegram | POST request done, response is: <Response [200]>
+ b'{"ok":true,"result":{"message_id":73,"from":{"id":7523784782,"is_bot":true,"first_name":"Teste","username":"cool_wazuh_bot"},"chat":{"id":-4688882008,"title":"Souza, Teste","type":"group","all_members_are_administrators":true},"date":1739817694,"text":"Chamado aberto de teste, favor ignorar.\\nFileAccessed\\nARQUIVO: WHG - Matriz - Seguran\\u00e7a - Implanta\\u00e7\\u00e3o - Fortimail Cloud.xlsx\\nLOCAL DO ARQUIVO: https://exemplo.com/sites/projects/Documentos Partilhados/WHG - Matriz - Seguran\\u00e7a - Implanta\\u00e7\\u00e3o - Fortimail Cloud.xlsx\\nGroups: [\'office365\', \'SharePointFileOperation\']\\nRule: 91537 (Level 3)\\nAgent: brsp01srv010 (000)\\nLocal: Brazil","entities":[{"offset":0,"length":39,"type":"bold"},{"offset":40,"length":222,"type":"blockquote"},{"offset":142,"length":45,"type":"url"},{"offset":262,"length":7,"type":"bold"},{"offset":311,"length":5,"type":"bold"},{"offset":333,"length":6,"type":"bold"},{"offset":359,"length":6,"type":"bold"}]}}' 
+Mon Feb 17 15:42:30 -03 2025| Custom-Good-Telegram | good-telegram started: 
+Mon Feb 17 15:42:30 -03 2025| Custom-Good-Telegram | Parsing alert json 
+Mon Feb 17 15:42:30 -03 2025| Custom-Good-Telegram | Parsing done 
+Mon Feb 17 15:42:30 -03 2025| Custom-Good-Telegram | Message: {'chat_id': -4688882008, 'text': "*Chamado aberto de teste, favor ignorar\\.*\n>OPERAÇÃO\n>FileAccessed\n>WHG \\- Matriz \\- Segurança \\- Implantação \\- Fortimail Cloud\\.xlsx\n>https://exemplo\\.com/sites/projects/Documentos Partilhados/WHG \\- Matriz \\- Segurança \\- Implantação \\- Fortimail Cloud\\.xlsx\n*Groups:* \\['office365', 'SharePointFileOperation'\\]\n*Rule:* 91537 \\(Level 3\\)\n*Agent:* brsp01srv010 \\(000\\)\n*Local:* Brazil\n", 'parse_mode': 'MarkdownV2'} 
+Mon Feb 17 15:42:31 -03 2025| Custom-Good-Telegram | POST request done, response is: <Response [200]>
+ b'{"ok":true,"result":{"message_id":74,"from":{"id":7523784782,"is_bot":true,"first_name":"Teste","username":"cool_wazuh_bot"},"chat":{"id":-4688882008,"title":"Souza, Teste","type":"group","all_members_are_administrators":true},"date":1739817749,"text":"Chamado aberto de teste, favor ignorar.\\nOPERA\\u00c7\\u00c3O\\nFileAccessed\\nWHG - Matriz - Seguran\\u00e7a - Implanta\\u00e7\\u00e3o - Fortimail Cloud.xlsx\\nhttps://exemplo.com/sites/projects/Documentos Partilhados/WHG - Matriz - Seguran\\u00e7a - Implanta\\u00e7\\u00e3o - Fortimail Cloud.xlsx\\nGroups: [\'office365\', \'SharePointFileOperation\']\\nRule: 91537 (Level 3)\\nAgent: brsp01srv010 (000)\\nLocal: Brazil","entities":[{"offset":0,"length":39,"type":"bold"},{"offset":40,"length":204,"type":"blockquote"},{"offset":124,"length":45,"type":"url"},{"offset":244,"length":7,"type":"bold"},{"offset":293,"length":5,"type":"bold"},{"offset":315,"length":6,"type":"bold"},{"offset":341,"length":6,"type":"bold"}]}}' 
+Mon Feb 17 15:43:27 -03 2025| Custom-Good-Telegram | good-telegram started: 
+Mon Feb 17 15:43:27 -03 2025| Custom-Good-Telegram | Parsing alert json 
+Mon Feb 17 15:43:27 -03 2025| Custom-Good-Telegram | Parsing done 
+Mon Feb 17 15:43:27 -03 2025| Custom-Good-Telegram | Message: {'chat_id': -4688882008, 'text': "*Chamado aberto de teste, favor ignorar\\.*\n>Operação: FileAccessed\n>WHG \\- Matriz \\- Segurança \\- Implantação \\- Fortimail Cloud\\.xlsx\n*Groups:* \\['office365', 'SharePointFileOperation'\\]\n*Rule:* 91537 \\(Level 3\\)\n*Agent:* brsp01srv010 \\(000\\)\n*Local:* Brazil\n", 'parse_mode': 'MarkdownV2'} 
+Mon Feb 17 15:43:28 -03 2025| Custom-Good-Telegram | POST request done, response is: <Response [200]>
+ b'{"ok":true,"result":{"message_id":75,"from":{"id":7523784782,"is_bot":true,"first_name":"Teste","username":"cool_wazuh_bot"},"chat":{"id":-4688882008,"title":"Souza, Teste","type":"group","all_members_are_administrators":true},"date":1739817807,"text":"Chamado aberto de teste, favor ignorar.\\nOpera\\u00e7\\u00e3o: FileAccessed\\nWHG - Matriz - Seguran\\u00e7a - Implanta\\u00e7\\u00e3o - Fortimail Cloud.xlsx\\nGroups: [\'office365\', \'SharePointFileOperation\']\\nRule: 91537 (Level 3)\\nAgent: brsp01srv010 (000)\\nLocal: Brazil","entities":[{"offset":0,"length":39,"type":"bold"},{"offset":40,"length":85,"type":"blockquote"},{"offset":125,"length":7,"type":"bold"},{"offset":174,"length":5,"type":"bold"},{"offset":196,"length":6,"type":"bold"},{"offset":222,"length":6,"type":"bold"}]}}' 
